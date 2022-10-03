@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap'); 
+
+* {
+  box-sizing: border-box;
+}
+.link {
+  position: absolute;
+  top: -45px;
+  left: 40px;
+}
+.link a{
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+  transition: all 0.5s ease 0s;
+}
+.link a:hover {
+  border-bottom: 3px solid #fff;
+  transition: all 0.5s ease 0s;
+}
+.link__img {
+  display: inline-block;
+  max-width: 50px;
+}
+.link__img img{
+  max-width: 100%;
+  margin: 0px 0px -4px -6px;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  overflow: hidden;
+  margin: 0;
+  background: #111;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('./triangles-1430105_1280.png') 0px 0px / cover no-repeat;
+}
+.container {
+  width: 100%;
+  display: flex;
+  padding: 0 20px;
+  position: relative;
+}
+.slide {
+  height: 80vh;
+  border-radius: 20px;
+  margin: 10px;
+  cursor: pointer;
+  color: #fff;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  transition: all 500ms ease-in-out;
+}
+.slide h3 {
+  position: absolute;
+  font-size: 24px;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+.slide.active {
+  flex: 10;
+}
+.slide.active h3 {
+  opacity: 1;
+  transition: opacity  0.5s ease-in 0.4s;
+}

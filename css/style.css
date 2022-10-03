@@ -1,0 +1,524 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+ /* Reset */
+body {
+   font-family: 'Inter', sans-serif;
+   background: #FFFBD2;
+}
+.wrrapen {
+   overflow: hidden;
+}
+.main__container {
+   display: flex;
+   flex-direction: row-reverse;
+}
+@media (max-width:769px) {
+   .main__container {
+      flex-direction: column-reverse;
+   }
+}
+.container {
+   max-width: 1535px;
+   margin: 0 auto;
+   padding: 20px auto;
+}
+.main {
+   max-width: 921px;
+   margin: 0px 0px 0px 98px;
+}
+.title {
+   font-weight: 400;
+   font-size: 40px;
+   line-height: 48px;
+}
+.text {
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 24px;
+   color: #000000;
+}
+ /*------------------------- section about me -----------------------*/
+.about {
+
+}
+
+.about__body {
+   margin: 10px 0px 34px 0px;
+}
+.about__title-block {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: #69E15F;
+   padding: 16px 0px 15px 33px;
+   margin-bottom: 20px;
+}
+.about__title {
+   padding: 0px 0px 0px 10px;
+   margin: 0px 0px 6px 0px;
+   color: #000;
+}
+.about__choice-languages {
+   background: url('../image/icons/Polygon\ 1.png') 52px 4px no-repeat;
+}
+.about-image__choice-languages {
+   margin: -2px 0px 0px 0px;
+}
+#about__language {
+   margin: 0px 25px 0px 0px;
+   appearance: none;
+   background-color: #69E15F;
+   font-size: 17px;
+   line-height: 20px;
+   letter-spacing: 0.03em;
+   color: #000;
+}
+.about__information p {
+   padding: 0px 0px 29px 60px;
+}
+.about__block-link {
+   text-align: right;
+   margin: 0px 20px 0px 0px;
+}
+.about__link {
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 131%;
+   color: #000000;
+}
+.about__link::before {
+   content: url('../image/icons/right.png');
+}
+.about__link::after {
+   content: url('../image/icons/left.png');
+}
+/*---------------- section my education -----------------------------------------*/
+.education {
+   margin: 100px 0px 0px 0px;
+}
+.education__body {
+
+}
+.education__title {
+   margin-bottom: 19px;
+   padding: 16px 0px 15px 33px;
+   background-color: #69E15F;
+   color: #000;
+}
+.education-years__first {
+   display: flex;
+   
+}
+.education-years__second {
+   display: flex;
+   margin: 5px 0px 0px 0px;
+}
+.name-of-the-institution {
+   max-width: 400px;
+   margin: 0px 0px 5px 0px;
+   font-weight: bold;
+}
+.name-of-the-institution-two {
+   max-width: 400px;
+   font-weight: bold;
+   margin: 72px 0px 0px 0px;
+}
+.years {
+   padding-right: 140px;
+   flex: 1 0 auto;
+}
+.lists__item {
+   padding: 0px 20px 33px 0px;
+   text-align: left;
+   max-width: 450px;
+   list-style-type: disc;
+}
+.lists__item span {
+   font-weight: bold;
+}
+
+/*--------------------------- section my certificates -------------------------*/
+.certificates {
+   margin: 100px 0px 0px 0px;
+}
+.certificates__title {
+   padding: 16px 0px 15px 33px;
+   background-color: #69E15F;
+   color: #000;
+}
+.certificates__body {
+   margin: 70px 0px 0px 0px;
+}
+/*--------------------------- certificates one group -------------------------*/
+.certificates__group-one {
+   display: flex;
+   position: relative;
+}
+.certificates__description {
+   display: flex;
+   align-items: center;
+   border: 3px solid #226C21;
+   border-radius: 28.5478px;
+}
+.description__img {
+   max-width: 244px;
+   padding: 45px 0px 36px 24px;
+   margin-right: 15px;
+}
+.description__img img {
+   max-width: 100%;
+}
+.description__contant {
+   padding: 0px 21px 0px 26px;
+}
+
+.discription__title h3{
+   padding: 0px 0px 10px 0px;
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 133.07%;
+   color: #000000;
+}
+.discription__title h3::after {
+   content: url('../image/icons/Polygon\ 2.png');
+   padding: 0px 0px 0px 4px;
+}
+.discription__text {
+   max-width: 162px;
+}
+.discription__text p {
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 133.07%;
+   color: #000000;
+}
+.certificates__img {
+   position: absolute;
+   top: -37px;
+   left: 50%;
+}
+/*--------------------------- certificates two group -------------------------*/
+.certificates__group-two {
+   display: flex;
+   justify-content: flex-end;
+   position: relative;
+   margin: 50px 20px 0px 0px;
+}
+.certificates__img-two {
+   max-width: 244px;
+   margin-right: 15px;
+}
+.certificates__img-two{
+   position: absolute;
+   top: -40%;
+   left: 9%;
+}
+.certificates__description-two {
+   display: flex;
+   align-items: center;
+   background: #226C21;
+   border: 3px solid #194D18;
+   border-radius: 28.5478px;
+}
+.discription__title-two h3{
+   padding: 0px 0px 10px 0px;
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 133.07%;
+   color: #fff;
+}
+.discription__title-two h3::after {
+   content: url('../image/icons/Polygon\ 3.png');
+   padding: 0px 0px 0px 4px;
+}
+.discription__text-two {
+   max-width: 162px;
+}
+.discription__text-two p {
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 133.07%;
+   color: #fff;
+}
+/*--------------------------- certificates arrow -------------------------*/
+.certificates__arrow {
+   position: relative;
+   display: flex;
+   justify-content: end;
+}
+.certificates__img-arrow {
+   max-width: 362px;
+}
+.certificates__img-arrow img {
+   max-width: 100%;
+}
+.certificates__arrow-link {
+   position: absolute;
+   top: 104px;
+   right: 55px;
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-size: 16px;
+   color: #000000;
+}
+/*--------------------------- section my work -------------------------*/
+.work {
+   margin: 30px 0px 0px 0px;
+}
+.work__body {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.work__title {
+   margin: 0px 0px 30px 0px;
+   padding: 16px 0px 15px 33px;
+   background-color: #69E15F;
+   color: #000;
+}
+/*--------------------------- section one work -------------------------*/
+.work__section-one {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+.work__img {
+   margin-right: 40px;
+}
+.work__experience {
+   
+}
+.experience__years h3 { 
+   display: inline-block;
+   padding: 0px 0px 10px 0px;
+   font-weight: 600;
+   font-size: 24px;
+   line-height: 29px;
+   color: #000000;
+}
+.experience__years h3 {
+   cursor: pointer;
+}
+/* .experience__years h3::after {
+   content: url('../image/icons/arrow_work.png');
+} */
+.experience__img {
+   margin: 0px 0px 0px 1px;
+   transition: all 0.5s ease 0s;
+   transform: rotate(0deg) translate(0px, 7px);
+}
+.experience__img.active {
+   transition: all 0.5s ease 0s;
+   transform: rotate(90deg) translate(6px, 0px);
+}
+.experience__text {
+   max-width: 500px;
+}
+.experience__text p{
+   font-weight: 400;
+   font-size: 24px;
+   line-height: 29px;
+   text-align: justify;
+}
+
+
+/*--------------------------- section two work -------------------------*/
+.work__section-two {
+   margin: 50px 0px;
+}
+.experience__link-text{
+   font-weight: 600;
+}
+.experience__link:not(:last-child) {
+   padding: 0px 0px 10px 0px;
+}
+.experience__link-link::before {
+   content: url('../image/icons/right.png');
+}
+.experience__link-link::after {
+   content: url('../image/icons/left.png');
+}
+.experience__link-link {
+   color: #000;
+   display: inline-block;
+   transition: all 0.8s ease 0s;
+   transform: scale(1) translate(0, 0);
+}
+.experience__link-link:hover {
+   color: #15490d;
+   transform: scale(1.3) translate(10%, -1%);
+   transition: all 0.8s ease 0s;
+}
+/*--------------------------- section three work -------------------------*/
+.work__section-three {
+   margin: 0px 0px 50px 0px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+.work__img-three {
+   margin-left: 40px;
+}
+
+/*--------------------------- section four work -------------------------*/
+.work__section-four {
+   margin: 50px 0px;
+}
+
+
+/*--------------- Sidebar -------------------------------*/
+.sidebar {
+   max-width: 570px;
+   background-color: #11240E ;
+}
+.sidebar__body {
+   text-align: left;
+   padding: 0px 77px 0px 75px;
+}
+.sidebar__image {
+   max-width: 440px;
+   padding: 73px 0px 34px 0px;   
+   display: flex;
+   justify-content: center;
+}
+.sidebar__image img {
+   max-width: 100%;
+   border-radius: 50%;
+}
+.sidebar__name {
+   color: #fff;
+}
+.sidebar__profession {
+   color: #fff;
+   font-weight: 400;
+   font-size: 24px;
+   line-height: 29px;
+}
+.sidebar__info {
+
+}
+.sidebar-contact__body {
+   margin: 59px 0px 25px 0px;
+   padding: 30px;
+   background-color: #fff;
+   font-weight: 400;
+   font-size: 24px;
+   line-height: 29px;
+}
+.sidebar-contact__body a {
+   color: #000;
+}
+/* ------------- Skills ---------------------------------*/
+.sidebar__skills {
+   margin-top: 85px;
+}
+.sidebar__title {
+   font-weight: 400;
+   font-size: 32px;
+   line-height: 39px;
+   color: #FFFFFF;
+}
+.skill-lists {
+   padding: 47px 0px 0px 0px;
+   margin-left: 40px;
+}
+.skill-lists__item {
+   padding: 25px 0px 0px 0px;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 24px;
+   color: #FFFFFF;
+   list-style-type: disc;
+}
+.skill-lists__item:nth-child(1) {
+   padding: 0;
+}
+.sidebar__hobbis {
+   margin-top: 80px;
+}
+.hobbis-lists {
+   padding: 46px 0 0 0;
+}
+.hobbis-lists__item {
+   padding: 25px 0px 0px 0px;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 24px;
+   color: #FFFFFF;
+}
+.hobbis-lists__item:nth-child(1) {
+   padding: 0;
+}
+/* ------------- Social ---------------------------------*/
+.sidebar__social {
+   margin-top: 69px;
+}
+.sidebar-links__body {
+   display: flex;
+   flex-direction: column;
+   margin-top: 35px;
+}
+.social__contant {
+   display: flex;
+   align-items: center;
+}
+.social__contant:not(:last-child) {
+   margin: 0px 0px 10px 0px;
+}
+.social__img {
+   margin-right: 15px;
+}
+.social__link a{
+   border-bottom: 4px solid transparent;
+   transition: all 0.5s ease 0s;
+}
+.social__link a:hover{
+   transition: all 0.5s ease 0s;
+   border-bottom: 4px solid #fff;
+}
+.social__link a{
+   font-weight: 400;
+   font-size: 24px;
+   line-height: 29px;
+   color: #FFFFFF;
+}
