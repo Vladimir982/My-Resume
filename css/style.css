@@ -42,7 +42,7 @@ body {
    display: flex;
    flex-direction: row-reverse;
 }
-@media (max-width:769px) {
+@media (max-width:908px) {
    .main__container {
       flex-direction: column-reverse;
    }
@@ -56,6 +56,16 @@ body {
    max-width: 921px;
    margin: 0px 0px 0px 98px;
 }
+@media (max-width: 1026px) {
+   .main {
+      margin: 0px 0px 0px 20px;
+   }
+}
+@media (max-width: 908px) {
+   .main {
+      margin: 0px 0px 0px 0px;
+   }
+}
 .title {
    font-weight: 400;
    font-size: 40px;
@@ -66,6 +76,14 @@ body {
    font-size: 20px;
    line-height: 24px;
    color: #000000;
+}
+@media (max-width:908px) {
+   .title {
+      font-size: 30px;
+   }
+   .text {
+      font-size: 15px;
+   }
 }
  /*------------------------- section about me -----------------------*/
 .about {
@@ -124,6 +142,22 @@ body {
 .about__link::after {
    content: url('../image/icons/left.png');
 }
+@media (max-width: 1026px) {
+   .about__information p { 
+      max-width: 445px;
+   }
+}
+@media (max-width: 908px) {
+   .about__body {
+      margin: 10px 0px 4px 0px;
+   }
+   .about__information p { 
+      padding: 0px 20px 30px 20px;
+      display: flex;
+      justify-content: center;
+      max-width: 745px;
+   }
+}
 /*---------------- section my education -----------------------------------------*/
 .education {
    margin: 100px 0px 0px 0px;
@@ -168,7 +202,42 @@ body {
 .lists__item span {
    font-weight: bold;
 }
-
+@media (max-width: 1026px) {
+   .years {
+      padding-bottom: 20px;
+      font-weight: 600;
+   }
+   .education-years__first {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 15px 0px;
+      
+   }
+   .education-years__second {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 15px 0px;
+      margin: 5px 0px 0px 0px;
+   }
+}
+@media (max-width: 908px) {
+   .name-of-the-institution {
+      margin: 0px 0px 5px 20px;
+   }
+   .name-of-the-institution-two {
+      
+      margin: 72px 0px 0px 20px;
+   }
+   .education-years__first,
+   .education-years__second {
+      display: flex;
+      flex-direction: column;
+      padding: 15px 0px;
+      margin: 5px 0px 0px 10px;
+   }
+}
 /*--------------------------- section my certificates -------------------------*/
 .certificates {
    margin: 100px 0px 0px 0px;
@@ -213,10 +282,7 @@ body {
    line-height: 133.07%;
    color: #000000;
 }
-.discription__title h3::after {
-   content: url('../image/icons/Polygon\ 2.png');
-   padding: 0px 0px 0px 4px;
-}
+
 .discription__text {
    max-width: 162px;
 }
@@ -232,6 +298,12 @@ body {
    position: absolute;
    top: -37px;
    left: 50%;
+}
+@media (max-width: 1453px) {
+   .certificates__img{
+      display: none;
+   }
+   
 }
 /*--------------------------- certificates two group -------------------------*/
 .certificates__group-two {
@@ -265,10 +337,7 @@ body {
    line-height: 133.07%;
    color: #fff;
 }
-.discription__title-two h3::after {
-   content: url('../image/icons/Polygon\ 3.png');
-   padding: 0px 0px 0px 4px;
-}
+
 .discription__text-two {
    max-width: 162px;
 }
@@ -279,6 +348,16 @@ body {
    font-size: 16px;
    line-height: 133.07%;
    color: #fff;
+}
+@media (max-width: 1453px) {
+   .certificates__img-two{
+      display: none;
+   }
+}
+@media (max-width: 908px) {
+   .certificates__group-two {
+      margin: 50px 0px 0px 0px;
+  }
 }
 /*--------------------------- certificates arrow -------------------------*/
 .certificates__arrow {
@@ -309,6 +388,7 @@ body {
    display: flex;
    flex-direction: column;
    align-items: center;
+   padding: 0px 20px;
 }
 .work__title {
    margin: 0px 0px 30px 0px;
@@ -358,10 +438,22 @@ body {
    font-weight: 400;
    font-size: 24px;
    line-height: 29px;
-   text-align: justify;
+   text-align: center;
+   opacity: 1;
+   visibility: visible;
 }
-
-
+/* .experience__text p.active {
+   opacity: 1;
+   visibility: visible;
+} */
+@media (max-width: 908px) {
+   .work__section-one {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+   }
+}
 /*--------------------------- section two work -------------------------*/
 .work__section-two {
    margin: 50px 0px;
@@ -391,7 +483,6 @@ body {
 }
 /*--------------------------- section three work -------------------------*/
 .work__section-three {
-   margin: 0px 0px 50px 0px;
    display: flex;
    justify-content: space-around;
    align-items: center;
@@ -399,7 +490,14 @@ body {
 .work__img-three {
    margin-left: 40px;
 }
-
+@media (max-width: 908px) {
+   .work__section-three {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+}
 /*--------------------------- section four work -------------------------*/
 .work__section-four {
    margin: 50px 0px;
@@ -413,7 +511,7 @@ body {
 }
 .sidebar__body {
    text-align: left;
-   padding: 0px 77px 0px 75px;
+   padding: 0px 55px;
 }
 .sidebar__image {
    max-width: 440px;
@@ -447,6 +545,17 @@ body {
 }
 .sidebar-contact__body a {
    color: #000;
+}
+@media (max-width: 769px) {
+   .sidebar {
+      max-width: 770px;
+   }
+   .sidebar__image{
+      margin: 0px auto;
+   }
+}
+@media (max-width: 908px) {
+   
 }
 /* ------------- Skills ---------------------------------*/
 .sidebar__skills {
@@ -496,7 +605,7 @@ body {
 .sidebar-links__body {
    display: flex;
    flex-direction: column;
-   margin-top: 35px;
+   margin: 35px 0px;
 }
 .social__contant {
    display: flex;
@@ -521,4 +630,23 @@ body {
    font-size: 24px;
    line-height: 29px;
    color: #FFFFFF;
+}
+@media (max-width: 769px) {
+   .sidebar {
+      max-width: 750px;
+      text-align: center;
+   }
+}
+@media (max-width: 460px) {
+   .sidebar-contact__body {
+      font-size: 17px;
+   }
+}
+@media (max-width: 370px) {
+   .sidebar-contact__body-gmail {
+      font-size: 12px;
+   }
+   .social__link a{
+      font-size: 18px;
+   }
 }
